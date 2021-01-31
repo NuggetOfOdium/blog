@@ -8,14 +8,17 @@ import {
   VStack,
   Icon,
   Box,
+  Button,
 } from '@chakra-ui/react';
 import { AiOutlineCheckCircle } from 'react-icons/ai';
+import { NowPlaying } from 'components/NowPlaying';
 
 export default function Home() {
   return (
     <>
       <Nav />
       <Flex maxW="768px" mx="auto" d="col" p="6">
+        <NowPlaying />
         <Container mt={8} w="100%" maxW="120ch">
           <Heading size="lg">Hi there, My name is Odysseas</Heading>
           <Text>
